@@ -1,0 +1,19 @@
+  Determining projects to restore...
+  Writing /tmp/tmpoYBZzE.tmp
+info : X.509 certificate chain validation will use the fallback certificate bundle at '/usr/share/dotnet/sdk/6.0.428/trustedroots/codesignctl.pem'.
+info : X.509 certificate chain validation will use the fallback certificate bundle at '/usr/share/dotnet/sdk/6.0.428/trustedroots/timestampctl.pem'.
+info : Adding PackageReference for package 'Microsoft' into project '/home/coder/project/workspace/dotnetapp/dotnetapp.csproj'.
+info : Restoring packages for /home/coder/project/workspace/dotnetapp/dotnetapp.csproj...
+info :   GET https://api.nuget.org/v3-flatcontainer/microsoft/index.json
+info :   NotFound https://api.nuget.org/v3-flatcontainer/microsoft/index.json 269ms
+error: NU1101: Unable to find package Microsoft. No packages exist with this id in source(s): nuget.org
+error: NU1605: Detected package downgrade: Microsoft.IdentityModel.Tokens from 6.24.0 to 6.15.0. Reference the package directly from the project to select a different version. 
+error:  dotnetapp -> Microsoft.Data.SqlClient 5.1.1 -> Microsoft.IdentityModel.JsonWebTokens 6.24.0 -> Microsoft.IdentityModel.Tokens (>= 6.24.0) 
+error:  dotnetapp -> Microsoft.IdentityModel.Tokens (>= 6.15.0)
+error: NU1605: Detected package downgrade: Microsoft.IdentityModel.Tokens from 6.24.0 to 6.15.0. Reference the package directly from the project to select a different version. 
+error:  dotnetapp -> Microsoft.Data.SqlClient 5.1.1 -> Microsoft.IdentityModel.Protocols.OpenIdConnect 6.24.0 -> Microsoft.IdentityModel.Protocols 6.24.0 -> Microsoft.IdentityModel.Tokens (>= 6.24.0) 
+error:  dotnetapp -> Microsoft.IdentityModel.Tokens (>= 6.15.0)
+error: NU1605: Detected package downgrade: Microsoft.IdentityModel.Tokens from 6.24.0 to 6.15.0. Reference the package directly from the project to select a different version. 
+error:  dotnetapp -> Microsoft.Data.SqlClient 5.1.1 -> Microsoft.IdentityModel.Protocols.OpenIdConnect 6.24.0 -> System.IdentityModel.Tokens.Jwt 6.24.0 -> Microsoft.IdentityModel.Tokens (>= 6.24.0) 
+error:  dotnetapp -> Microsoft.IdentityModel.Tokens (>= 6.15.0)
+error: Package 'Microsoft' is incompatible with 'all' frameworks in project '/home/coder/project/workspace/dotnetapp/dotnetapp.csproj'.
